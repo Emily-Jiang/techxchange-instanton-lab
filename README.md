@@ -30,6 +30,17 @@ su
 
 Use the `root` password specified in the Lab Guide.
 
+### Prereq
+Install Git, Maven, Java 17, Podman, Wget
+```bash
+yum install git
+yum install maven
+yum install wget
+wget https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.8.1%2B1_openj9-0.40.0/ibm-semeru-open-17-jdk-17.0.8.1.1_0.40.0-1.x86_64.rpm
+yum -y install ./ibm-semeru-open-17-jdk-17.0.8.1.1_0.40.0-1.x86_64.rpm
+export JAVA_HOME=/usr/lib/jvm/ibm-semeru-open-17-jdk-17.0.8.1.1_0.40.0-1.x86_64
+yum install podman
+```
 ### Clone the application from GitHub
 
 ```bash
