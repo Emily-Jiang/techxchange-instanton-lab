@@ -166,7 +166,7 @@ Performing checkpoint --at=afterAppStart
 ...
 ```
 
-### Run the InstantOn application in a container
+### Run the InstantOn application in a container (this step might not work for some shells. You can skip this one if this is the case.)
 
 Run the provided script:
 
@@ -315,7 +315,9 @@ You should see the following output:
 >
 >```bash
 >  oc apply -f serverless-subscription.yaml
+>  oc apply -f serving.yaml
 >```
+
 
 ### Verify the Knative service is ready
 
